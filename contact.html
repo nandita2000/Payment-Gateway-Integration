@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+<title>Donation | Contact</title>
+
+</head>    
+<body>
+    <header>
+        <nav id="navbar">
+            
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="navlinks">
+                <li><a class="links" href="./index.html">Home</a></li>
+                <li><a class="links" href="./Donation.html">Donate</a></li>
+                <li><a class="links" href="./contact.html">Contact</a></li>
+                <li><a class="links" href="./about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    
+<!--Script for header-->
+<script>
+function ResponsiveFunction()
+{  
+    var nav = document.getElementById("header-right");
+    var closeIcon = document.getElementById("closeIcon");
+      
+    if (nav.className === "header-right")
+    {
+        nav.className += " Responsive-SlideDown";
+        closeIcon.style.opacity = "1";
+    }    
+    else
+    {
+        nav.className = "header-right";
+        closeIcon.style.opacity = "0";
+    }  
+}
+</script>  
+<!--End of Script for header-->
+
+<div class="background">
+  <div class="container">
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+        </div>
+      </div>
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="logo-img">
+            <img src="img/logo.png" class="img-fluid">
+      </div>
+          <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value=" ">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+  
+</body>
+</html>
